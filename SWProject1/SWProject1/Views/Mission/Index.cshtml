@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Missions</h2>
+
+@using (Html.BeginForm("CategoryChosen", "Mission", FormMethod.Get))
+{
+<fieldset>
+    Mission
+    @Html.DropDownList("Missions")
+    <p>
+        <input type="submit" value="Submit" />
+    </p>
+</fieldset>
+} 
