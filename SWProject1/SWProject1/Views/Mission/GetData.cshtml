@@ -1,0 +1,44 @@
+﻿@model IEnumerable<SWProject1.Models.NewMission>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>All mission data</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MissionName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PresFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PresLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Language)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MissionName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PresFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PresLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Language)
+            </td>
+        </tr>
+    }
+
+</table>

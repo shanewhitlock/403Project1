@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<SWProject1.Models.Mission>
+
 @{
     ViewBag.Title = "Index";
 }
@@ -7,11 +8,13 @@
 
 @using (Html.BeginForm("CategoryChosen", "Mission", FormMethod.Get))
 {
-<fieldset>
-    Mission
-    @Html.DropDownList("Missions")
-    <p>
-        <input type="submit" value="Submit" />
-    </p>
-</fieldset>
+    <fieldset>
+        Mission
+        @Html.DropDownList("Missions")
+        <p>
+            <input type="submit" value="Submit" />
+        </p>
+    </fieldset>
+
+    
 } 
