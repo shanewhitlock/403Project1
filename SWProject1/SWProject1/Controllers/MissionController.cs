@@ -27,7 +27,7 @@ namespace SWProject1.Controllers
 
         public ViewResult CategoryChosen(string Missions)
         {
-            string inputID = "1";
+            string inputID = "0";
             if (Missions == "Idaho, Boise")
             {
                 inputID = "3";
@@ -54,8 +54,9 @@ namespace SWProject1.Controllers
         {
             IEnumerable<NewMission> mission =
      db.Database.SqlQuery<NewMission>(
-    "Select Mission.MissionID, Mission.PresID, Mission.MissionName, Mission.MissionHomeAddress, President.PresFirstName, Mission.CountryID, President.PresLastName, President.WifeFirstName, President.WifeLastName, Country.Language " +
-    "FROM Mission INNER JOIN President ON President.PresID = Mission.PresID INNER JOIN Country ON Country.CountryID = Mission.CountryID;");
+    "Select Mission.MissionID, Mission.Climate, Mission.DominantReligion, Mission.PresID, Mission.MissionName, Mission.MissionHomeAddress, President.PresFirstName, Mission.CountryID, President.PresLastName, President.WifeFirstName, President.WifeLastName, Country.Language " +
+    "FROM Mission INNER JOIN President ON President.PresID = Mission.PresID INNER JOIN Country ON Country.CountryID = Mission.CountryID " +
+    ";");
             return View(mission);
         }
 

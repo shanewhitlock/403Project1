@@ -15,7 +15,7 @@
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Who is the mission president?</a>
             </h4>
         </div>
-        <div id="collapseOne" class="panel-collapse collapse">
+        <div id="collapseOne" class="panel-collapse collapse in">
             <div class="panel-body">
                 The mission president is <strong>@Html.DisplayFor(modelItem => item.PresFirstName) @Html.DisplayFor(modelItem => item.PresLastName)</strong>.
             </div>
@@ -29,7 +29,7 @@
         </div>
         <div id="collapseTen" class="panel-collapse collapse">
             <div class="panel-body">
-                The mission president is Sister <strong>@Html.DisplayFor(modelItem => item.WifeFirstName) @Html.DisplayFor(modelItem => item.WifeLastName)</strong>.
+                The mission president's wife is Sister <strong>@Html.DisplayFor(modelItem => item.WifeFirstName) @Html.DisplayFor(modelItem => item.WifeLastName)</strong>.
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">What is the weather like?</a>
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">What types of clothes should I bring?</a>
             </h4>
         </div>
         <div id="collapseTwo" class="panel-collapse collapse">
@@ -85,3 +85,5 @@
         </div>
     </div>
 }
+
+<script src="https://use.fontawesome.com/4917869511.js"></script>
