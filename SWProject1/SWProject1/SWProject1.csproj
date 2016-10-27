@@ -189,6 +189,7 @@
     <Content Include="Content\Images\SWImage.jpg" />
     <Content Include="Content\MissionPossibleStylesheet.css" />
     <Content Include="Content\Styles.css" />
+    <Content Include="Content\Video\Magical_Christmas_Forest_Motion_Background_4K.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

@@ -1,4 +1,5 @@
 ﻿body {
+
 }
 
 .faqHeader {
@@ -7,10 +8,11 @@
     }
 
     .panel-heading [data-toggle="collapse"]:after {
-        font-family: 'Glyphicons Halflings';
-        content: "e072"; /* "play" icon */
+        font-family: FontAwesome;
+        content: "\f04b"; /* "play" icon */
         float: right;
         color: #F58723;
+        text-decoration: none;
         font-size: 18px;
         line-height: 22px;
         /* rotate "play" icon from > (right arrow) to down arrow */
@@ -30,3 +32,20 @@
         transform: rotate(90deg);
         color: #454444;
     }
+
+    .jumbotron{
+ position: relative;
+ z-index:-101;
+}
+
+ 
+#video-background { 
+     position: fixed;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       overflow: hidden;
+       z-index: -100;
+       width:100%;
+}
