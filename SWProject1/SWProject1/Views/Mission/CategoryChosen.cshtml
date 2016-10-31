@@ -4,7 +4,16 @@
     ViewBag.Title = "CategoryChosen";
 }
 
+
+<ol class="breadcrumb">
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("Select A Mission", "Index", "Mission")</li>
+    <li><a href="#">@ViewBag.Mission</a></li>
+</ol>
+
 <h2>@ViewBag.mission - FAQ</h2>
+
+<img src="@ViewBag.image" style="height: 500px;" />
 
 @foreach (var item in Model)
 {

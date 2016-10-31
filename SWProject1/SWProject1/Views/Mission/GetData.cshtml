@@ -4,6 +4,13 @@
     ViewBag.Title = "Home Page";
 }
 
+
+
+<ol class="breadcrumb">
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("All Data", "GetData", "Mission")</li>
+</ol>
+
 <h2>All mission data</h2>
 
 <table class="table">

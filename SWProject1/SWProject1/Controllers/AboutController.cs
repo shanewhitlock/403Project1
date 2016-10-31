@@ -9,6 +9,7 @@ namespace SWProject1.Controllers
     public class AboutController : Controller
     {
         // GET: About
+        //our about page. populate list
         public void Index()
         {
             List<string> aboutList = new List<string>();
@@ -19,7 +20,7 @@ namespace SWProject1.Controllers
             ViewBag.AboutList = new SelectList(aboutList);
            
         }
-
+        //return the mission data.
         public ViewResult QuestionCategory(string AboutList)
         {
             ViewBag.question = AboutList;

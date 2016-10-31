@@ -4,17 +4,31 @@
     ViewBag.Title = "Index";
 }
 
+
+
+<ol class="breadcrumb">
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("Select A Mission", "Index", "Mission")</li>
+</ol>
+
 <h2>Missions</h2>
 
 @using (Html.BeginForm("CategoryChosen", "Mission", FormMethod.Get))
 {
-    <fieldset>
-        Mission
-        @Html.DropDownList("Missions")
-        <p>
-            <input type="submit" value="Submit" />
-        </p>
-    </fieldset>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <fieldset>
+                    <p style="font-size: 25px;">Choose Your Mission @Html.DropDownList("Missions")</p>
+                    
+                    <p>
+                        <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                    </p>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    
 
     
 } 
